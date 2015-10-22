@@ -24,9 +24,9 @@ docker run wikimedia/visualmetrics python visualmetrics.py --help
 </pre>
 
 ## Run
-Fetch metrics, converting a video located in the current directory:
+Fetch metrics, converting a video located in the current directory, storing images to an images folder:
 <pre>
-docker run -v "$(pwd)":/tmp wikimedia/visualmetrics python visualmetrics.py --video /tmp/myvideo.mov --perceptual -o
+docker run -v "$(pwd)":/tmp wikimedia/visualmetrics python visualmetrics.py --video /tmp/facebook-bad-network.mov --orange -k --dir /tmp/images --force
 </pre>
 
 ## Record a video
